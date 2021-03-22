@@ -16,7 +16,10 @@ namespace Study_c
             //Two(names);
             //Console.WriteLine("-----");
 
-            Three(names);
+            //Three(names);
+            //Console.WriteLine("-----");
+
+            Four(names);
             Console.WriteLine("-----");
 
         }
@@ -50,7 +53,12 @@ namespace Study_c
 
         private static void Four(List<string> names)
         {
-
+            var selected = names.Where(s => s.StartsWith("B"))
+                                .Select(s => s.Length);
+            foreach (var length in selected)
+            {
+                Console.WriteLine(length);
+            }
         }
     }
 }
