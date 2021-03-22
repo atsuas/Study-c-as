@@ -13,7 +13,10 @@ namespace Study_c
             //One(names);
             //Console.WriteLine("-----");
 
-            Two(names);
+            //Two(names);
+            //Console.WriteLine("-----");
+
+            Three(names);
             Console.WriteLine("-----");
 
         }
@@ -35,6 +38,19 @@ namespace Study_c
         {
             var count = names.Count(s => s.Contains("o"));
             Console.WriteLine(count);
+        }
+
+        private static void Three(List<string> names)
+        {
+            foreach (var name in names.Where(n => n.Contains("o")).ToArray())
+            {
+                Console.WriteLine(name);
+            }
+        }
+
+        private static void Four(List<string> names)
+        {
+
         }
     }
 }
