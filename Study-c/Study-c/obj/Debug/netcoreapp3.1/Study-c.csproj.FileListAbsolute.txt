@@ -1,0 +1,13 @@
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.exe
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.deps.json
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.runtimeconfig.json
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.runtimeconfig.dev.json
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.dll
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\bin\Debug\netcoreapp3.1\Study-c.pdb
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.csprojAssemblyReference.cache
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.AssemblyInfoInputs.cache
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.AssemblyInfo.cs
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.csproj.CoreCompileInputs.cache
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.dll
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.pdb
+C:\Users\aoyuu\OneDrive\デスクトップ\C#フォルダ-Windows\study-c-as\Study-c-as\Study-c\Study-c\obj\Debug\netcoreapp3.1\Study-c.genruntimeconfig.cache
