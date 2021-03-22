@@ -10,7 +10,10 @@ namespace Study_c
         {
             var names = new List<string> { "Tokyo", "New Delhi", "Bangkok", "London", "Paris", "Berlin", "Canberra", "Hong Kong", };
 
-            One(names);
+            //One(names);
+            //Console.WriteLine("-----");
+
+            Two(names);
             Console.WriteLine("-----");
 
         }
@@ -26,7 +29,12 @@ namespace Study_c
                 var index = names.FindIndex(s => s == line);
                 Console.WriteLine(index);
             } while (true);
+        }
 
+        private static void Two(List<string> names)
+        {
+            var count = names.Count(s => s.Contains("o"));
+            Console.WriteLine(count);
         }
     }
 }
