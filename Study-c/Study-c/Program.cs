@@ -28,12 +28,8 @@ namespace Study_c
 
         private static void Two(List<int> numbers)
         {
-            double s = 2.0;
-            foreach (double num in numbers)
-            {
-                var n = num / s;
-                Console.WriteLine(n);
-            }
+            numbers.ForEach(n => Console.WriteLine(n / 2.0));
         }
+
     }
 }
