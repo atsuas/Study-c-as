@@ -14,6 +14,15 @@ namespace Study_c
 
             One(numbers);
             Console.WriteLine("-----");
+
+            Two(numbers);
+            Console.WriteLine("-----");
+
+            Three(numbers);
+            Console.WriteLine("-----");
+
+            Four(numbers);
+            Console.WriteLine("-----");
         }
 
         private static void One(List<int> numbers)
@@ -31,5 +40,25 @@ namespace Study_c
             }
         }
 
+        private static void Two(List<int> numbers)
+        {
+            numbers.ForEach(n => Console.WriteLine(n / 2.0));
+        }
+
+        private static void Three(List<int> numbers)
+        {
+            foreach (var num in numbers.Where(n => n >= 50))
+            {
+                Console.WriteLine(num);
+            }
+        }
+
+        private static void Four(List<int> numbers)
+        {
+            foreach (var num in numbers.Select(n => n * 2).ToList())
+            {
+                Console.WriteLine(num);
+            }
+        }
     }
 }
