@@ -10,14 +10,74 @@ namespace Study_c
     {
         static void Main(string[] args)
         {
-            
+            var yearMonth = new YearMonth[]
+            {
+                new YearMonth(1990, 8),
+                new YearMonth(1999, 7),
+                new YearMonth(2000, 3),
+                new YearMonth(2020, 4),
+                new YearMonth(2035, 2),
+            };
+
+            One(yearMonth);
+            Console.WriteLine("-----");
+
+            Two(yearMonth);
+            Console.WriteLine("-----");
+
+            Three(yearMonth);
+            Console.WriteLine("-----");
+
+
+            static void One(YearMonth[] ymCollection)
+            {
+                foreach (var ym in ymCollection)
+                {
+                    Console.WriteLine(ym);
+                }
+            }
+
+            static YearMonth First(YearMonth[] yms)
+            {
+                foreach (var ym in yms)
+                {
+                    if (ym.Is21Century)
+                        return ym;
+                }
+                return null;
+            }
+
+            static void Two(YearMonth[] yms)
+            {
+                var yearmonth = First(yms);
+                if (yearmonth == null)
+                {
+                    Console.WriteLine("21世紀は存在しません");
+                }
+                else
+                {
+                    Console.WriteLine(yearmonth);
+                }
+            }
+
+            static void Three(YearMonth[] yms)
+            {
+                var array = yms.Select(n => n.AddOneMonth())
+                               .ToArray();
+                foreach (var ym in array)
+                {
+                    Console.WriteLine(ym);
+                }
+            }
+
         }
 
     }
 
-    class YearMonth
+    public class YearMonth
     {
         public int Year { get; private set; }
+
         public int Month { get; private set; }
 
         public YearMonth(int year, int month)
@@ -48,8 +108,9 @@ namespace Study_c
 
         public override string ToString()
         {
-            return $"{Year}年 {Month}月";
+            return $"{Year}年{Month}月";
         }
+
     }
 }
  
