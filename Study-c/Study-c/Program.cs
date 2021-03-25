@@ -10,14 +10,17 @@ namespace Study_c
     {
         static void Main(string[] args)
         {
-            var line = Console.ReadLine();
-            int num;
-            if (int.TryParse(line, out num))
-                Console.WriteLine("{0:#,#}", num);
-            else
-                Console.WriteLine("数値文字列ではありません");
+            var text = "Jackdaws love my big sphinx of quartz";
+
+            One(text);
+            Console.WriteLine("-----");
         }
 
+        private static void One(string text)
+        {
+            var spaces = text.Count(n => n == ' ');
+            Console.WriteLine($"スペースの数: {spaces}");
+        }
     }
 
 }
