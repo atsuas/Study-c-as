@@ -12,10 +12,17 @@ namespace Study_c
         {
             var names = new List<string> { "Tokyo", "New Delhi", "Bangkok", "London", "Paris", "Berlin", "Canberra", "Hong Kong", };
 
-            One(names);
+            //One(names);
+            //Console.WriteLine("-----");
+
+            //Two(names);
+            //Console.WriteLine("-----");
+
+            //Three(names);
+            //Console.WriteLine("-----");
+
+            Four(names);
             Console.WriteLine("-----");
-
-
         }
 
         private static void One(List<string> names)
@@ -29,5 +36,31 @@ namespace Study_c
                 Console.WriteLine(index);
             } while (true);
         }
+
+        private static void Two(List<string> names)
+        {
+            var count = names.Count(n => n.Contains("o"));
+            Console.WriteLine(count);
+        }
+
+        private static void Three(List<string> names)
+        {
+            foreach (var name in names.Where(n => n.Contains("o"))
+                                      .ToArray())
+            {
+                Console.WriteLine(name);
+            }
+        }
+
+        private static void Four(List<string> names)
+        {
+            var selected = names.Where(n => n.StartsWith("B"))
+                                .Select(n => n.Length);
+            foreach (var length in selected)
+            {
+                Console.WriteLine(length);
+            }
+        }
     }
 }
+ 
