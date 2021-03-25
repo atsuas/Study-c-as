@@ -10,17 +10,12 @@ namespace Study_c
     {
         static void Main(string[] args)
         {
-            var a = Console.ReadLine();
-            var b = Console.ReadLine();
-            if (string.Compare(a, b, ignoreCase:true) == 0)
-            {
-                Console.WriteLine("同じです");
-            }
+            var line = Console.ReadLine();
+            int num;
+            if (int.TryParse(line, out num))
+                Console.WriteLine("{0:#,#}", num);
             else
-            {
-                Console.WriteLine("違います");
-            }
-
+                Console.WriteLine("数値文字列ではありません");
         }
 
     }
