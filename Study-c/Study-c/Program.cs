@@ -10,57 +10,9 @@ namespace Study_c
     {
         static void Main(string[] args)
         {
-            var names = new List<string> { "Tokyo", "New Delhi", "Bangkok", "London", "Paris", "Berlin", "Canberra", "Hong Kong", };
-
-            //One(names);
-            //Console.WriteLine("-----");
-
-            //Two(names);
-            //Console.WriteLine("-----");
-
-            //Three(names);
-            //Console.WriteLine("-----");
-
-            Four(names);
-            Console.WriteLine("-----");
+            
         }
 
-        private static void One(List<string> names)
-        {
-            do
-            {
-                var line = Console.ReadLine();
-                if (string.IsNullOrEmpty(line))
-                    break;
-                var index = names.FindIndex(n => n == line);
-                Console.WriteLine(index);
-            } while (true);
-        }
-
-        private static void Two(List<string> names)
-        {
-            var count = names.Count(n => n.Contains("o"));
-            Console.WriteLine(count);
-        }
-
-        private static void Three(List<string> names)
-        {
-            foreach (var name in names.Where(n => n.Contains("o"))
-                                      .ToArray())
-            {
-                Console.WriteLine(name);
-            }
-        }
-
-        private static void Four(List<string> names)
-        {
-            var selected = names.Where(n => n.StartsWith("B"))
-                                .Select(n => n.Length);
-            foreach (var length in selected)
-            {
-                Console.WriteLine(length);
-            }
-        }
     }
 }
  
